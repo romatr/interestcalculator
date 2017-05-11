@@ -1,0 +1,9 @@
+version: "2"
+services:
+  app:
+    build: .
+    command: ./interestcalculator-linux-amd64
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8081:8080"
